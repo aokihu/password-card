@@ -1,0 +1,72 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Monaco, monospace;
+}
+
+.password-card-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-color: rgb(204, 204,204);
+  border-width: 1px;
+  border-style: double;
+  border-radius: 15px;
+  width: 500px;
+  height: 360px;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.password-card__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.password-card__body {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  font-size: 1.5rem;
+  letter-spacing: 0.7ch;
+}
+
+.password-card__zones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  font-variant-numeric: proportional-nums;
+}
+
+.password-card__zone {
+  border: 1px solid rgba(0,0,0,0.25);
+  padding: 0.5ch 1ch;
+  border-radius: 15px;
+}
+
+.password-card__zone > div:first-child {
+  margin-bottom: 10px;
+}
+
+.password-card__logo {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.password-card__account {
+  font-size: 2rem;
+}
