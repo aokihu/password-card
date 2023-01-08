@@ -21,12 +21,12 @@ export default function Page() {
         <div className="password-card__logo">LOGO</div>
         <div className="password-card__account">
           Account
-        </div>
+        </div>·
       </div>
       <div className="password-card__body">
         <div className="password-card__zones">
           {
-            passwords.map(p => <PasswordZone password={p} />)
+            passwords.map(p => <PasswordZone key={p} password={p} />)
           }
         </div>
       </div>
