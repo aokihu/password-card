@@ -4,10 +4,18 @@ html, body {
   font-family: Monaco, monospace;
 }
 
-.password-card-container {
+@media screen and (max-width: 500px) {
+  body {
+    transform-origin: center center;
+    transform: rotate(90deg) translateX(100%);
+  }
+}
+
+.password-card__container {
   position: absolute;
   left: 50%;
   top: 50%;
+  background-color:whitesmoke;
   border-color: rgb(204, 204,204);
   border-width: 1px;
   border-style: double;
@@ -21,6 +29,8 @@ html, body {
   flex-direction: column;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
 }
+
+
 
 .password-card__head {
   display: flex;
