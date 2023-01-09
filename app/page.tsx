@@ -1,4 +1,5 @@
 import PasswordZone from "./PasswordZone";
+import { Suspense } from "react";
 
 export default function Page() {
   return (
@@ -12,9 +13,11 @@ export default function Page() {
         </div>
         <div className="password-card__body">
           <div className="password-card__zones">
-            <PasswordZone />
-            <PasswordZone />
-            <PasswordZone />
+            <Suspense>
+              <PasswordZone />
+              <PasswordZone />
+              <PasswordZone />
+            </Suspense>
           </div>
         </div>
       </div>
